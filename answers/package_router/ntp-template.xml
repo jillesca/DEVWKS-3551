@@ -1,0 +1,29 @@
+<config-template xmlns="http://tail-f.com/ns/config/1.0">
+  <devices xmlns="http://tail-f.com/ns/ncs">
+    <device>
+      <name>{/device}</name>
+      <config>
+        <ntp xmlns="http://tail-f.com/ned/cisco-ios-xr">
+          <server>
+            <server-list>
+              <name>{$NTP_ADDRESS}</name>
+            </server-list>
+          </server>
+        </ntp>
+        <ntp xmlns="urn:ios">
+          <server>
+            <server-list>
+              <ip-address>{$NTP_ADDRESS}</ip-address>
+              <key>{key}</key>
+            </server-list>
+          </server>
+        </ntp>
+        <ntp xmlns="http://tail-f.com/ned/cisco-nx">
+          <server>
+            <id>{$NTP_ADDRESS}</id>
+          </server>
+        </ntp>
+      </config>
+    </device>
+  </devices>
+</config-template>
