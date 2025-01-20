@@ -1,0 +1,13 @@
+<ncs-package xmlns="http://tail-f.com/ns/ncs-packages">
+  <name>router</name>
+  <package-version>1.0</package-version>
+  <description>Generated Python package</description>
+  <ncs-min-version>6.2</ncs-min-version>
+
+  <component>
+    <name>router</name>
+    <application>
+      <python-class-name>router.router.Router</python-class-name>
+    </application>
+  </component>
+</ncs-package>

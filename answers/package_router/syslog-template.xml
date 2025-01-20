@@ -1,0 +1,24 @@
+<config-template xmlns="http://tail-f.com/ns/config/1.0">
+  <devices xmlns="http://tail-f.com/ns/ncs">
+    <device>
+      <name>{/device}</name>
+      <config>
+        <logging xmlns="http://tail-f.com/ned/cisco-ios-xr">
+          <host>
+            <address>{$SYSLOG_ADDRESS}</address>
+          </host>
+        </logging>
+        <logging xmlns="urn:ios">
+          <hostname>
+            <host>{$SYSLOG_ADDRESS}</host>
+          </hostname>
+        </logging>
+        <logging xmlns="http://tail-f.com/ned/cisco-nx">
+          <server>
+            <host>{$SYSLOG_ADDRESS}</host>
+          </server>
+        </logging>
+      </config>
+    </device>
+  </devices>
+</config-template>

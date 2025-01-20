@@ -1,0 +1,22 @@
+<config-template xmlns="http://tail-f.com/ns/config/1.0">
+  <devices xmlns="http://tail-f.com/ns/ncs">
+    <device>
+      <name>{/device}</name>
+      <config>
+        <ip xmlns="urn:ios">
+          <name-server>{$DNS_ADDRESS}</name-server>
+        </ip>
+        <ip xmlns="http://tail-f.com/ned/cisco-nx">
+          <name-server>
+            <servers>{$DNS_ADDRESS}</servers>
+          </name-server>
+        </ip>
+        <domain xmlns="http://tail-f.com/ned/cisco-ios-xr">
+          <name-server>
+            <address>{$DNS_ADDRESS}</address>
+          </name-server>
+        </domain>
+      </config>
+    </device>
+  </devices>
+</config-template>
