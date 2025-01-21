@@ -121,7 +121,13 @@ Test the package again with a `commit dry-run`
 Finally, when the package is fixed, commit the changes.
 
 ```bash
-commit
+commit and-quit
+```
+
+Exit the NSO cli.
+
+```bash
+exit
 ```
 
 ## Scenario 3. Interact with NSO programmatically

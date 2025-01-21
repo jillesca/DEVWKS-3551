@@ -1,8 +1,8 @@
 .DEFAULT_GOAL := workshop
 
 workshop:
-	chmod +x ./build_workshop.sh
-	source ./build_workshop.sh
+	chmod +x ~/src/DEVWKS-3551/build_workshop.sh
+	source ~/src/DEVWKS-3551/build_workshop.sh
 
 run:
 	$(MAKE) clean
