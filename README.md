@@ -19,11 +19,7 @@ This approach not only gives you practical experience but also equips you with t
 Setup the environment required for the lab.
 
 ```bash
-cd ~/src/DEVWKS-3551/
-```
-
-```bash
-make
+make -C ~/src/DEVWKS-3551/
 ```
 
 > [!NOTE]
@@ -57,6 +53,12 @@ This example showcases an NSO service that use Python to simplify templates, mak
 > Work with the files under the [packages/router](packages/router/) directory. This package has a symbolic link to the running NSO packages directory.
 
 ### Prepare the example
+
+Source the `.bashrc` file to get the environment variables for the workshop.
+
+```bash
+source ${HOME}/.bashrc
+```
 
 First compile the package used.
 
